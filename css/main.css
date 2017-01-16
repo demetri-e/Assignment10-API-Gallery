@@ -1,0 +1,141 @@
+
+
+html,
+body {
+  color: #666;
+  width: 100% height: 100%;
+}
+
+.allwrap {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.250em; 
+  font-weight: 400;
+  padding-bottom: 10px;
+  padding-top: 1em;
+  color: rgba(0,0,0,.5);
+  font-family: 'Walter Turncoat', cursive;
+}
+
+.main-gallery {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  padding: 2em 0 2em 0;
+  border: solid  2px rgba(0,0,0,.2);
+  border-radius: 10px;
+  min-width: 320px;
+}
+
+.albums {
+  box-sizing: border-box;
+  list-style: none;
+  display: inline-block;
+  width: 250px;
+  margin: 30px;
+}
+
+img {
+  width: 100%;
+  border: 10px solid rgba(214,214,214,.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 5px #d6d6d6;
+}
+
+
+/*****************************************************************
+  Lightbox
+*****************************************************************/
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+}
+
+.lightbox .container {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; 
+  top: 2em;
+  border: solid 1px darkgrey;
+  padding: 2em 1em;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.lightBoxImg {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lightBoxImg img {
+  border: none;
+}
+
+.lightBoxText {
+  color: white;
+  font-size: 1em;
+  padding-top: 1em;
+}
+
+.close {
+  width: 100%;
+  text-align: center;
+  padding-top: 3em;
+  cursor: pointer;
+}
+
+.close p {
+  display: inline-block;
+  border: solid 1px darkgrey;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background-color: rgba(225,225,225,.2);
+  color: #fff;
+  transition: .5s ease-out;
+}
+
+.close p:hover {
+  background-color: rgba(225,225,225,1);
+  color: #000;
+}
+
+@media screen and (min-width: 440px) {
+  .allwrap {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .albums {
+    width: 200px; 
+    height: 200px;
+  }
+
+  .lightbox .container {
+     width: 400px;
+     padding: 2em;
+     top: 4em;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: left;
+  }
+
+}
